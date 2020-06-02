@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <AnchorPane prefHeight="167.0" prefWidth="1201.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/2.jpg');">
+            <children>
+                <ImageView fitHeight="437.0" fitWidth="850.0" layoutX="100.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../resources/icons/logo.PNG" />
+                    </image>
+                </ImageView>
+            <Button fx:id="OpenRegButton" layoutX="1028.0" layoutY="68.0" mnemonicParsing="false" onAction="#OpenRegistration" prefHeight="31.0" prefWidth="112.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Регистрация" textFill="#d7d7d7" />
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </AnchorPane>
+      <TextField fx:id="inputText" layoutX="305.0" layoutY="340.0" prefHeight="49.0" prefWidth="562.0" promptText="Логин" style="-fx-background-color: #D7D3D3;">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </TextField>
+      <Button fx:id="OpenMainButton" layoutX="511.0" layoutY="438.0" mnemonicParsing="false" onAction="#ClickOnEnter" prefHeight="49.0" prefWidth="120.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Войти" textFill="#b5b5b5" />
+      <Label fx:id="outputText" layoutX="440.0" layoutY="742.0" prefHeight="87.0" prefWidth="382.0" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="37.0" />
+         </font></Label>
+      <Label layoutX="204.0" layoutY="249.0" text="Для индетификации профиля введите логин в поле ниже.">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

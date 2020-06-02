@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <AnchorPane layoutY="-2.0" prefHeight="160.0" prefWidth="1201.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/2.jpg');">
+            <children>
+                <ImageView fitHeight="437.0" fitWidth="850.0" layoutX="147.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../resources/icons/logo.PNG" />
+                    </image>
+                </ImageView>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </AnchorPane>
+        <TextField fx:id="inputNewLogin" layoutX="192.0" layoutY="285.0" prefHeight="49.0" prefWidth="562.0" promptText="login" style="-fx-background-color: #D7D3D3;">
+            <font>
+                <Font name="Times New Roman" size="24.0" />
+            </font>
+        </TextField>
+        <Button fx:id="button" layoutX="502.0" layoutY="729.0" mnemonicParsing="false" onAction="#Registration" prefHeight="49.0" prefWidth="194.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Зарегистрироваться" textFill="#b9b9b9" />
+        <Label layoutX="502.0" layoutY="171.0" prefHeight="85.0" prefWidth="239.0" text="Регистрация" underline="true">
+            <font>
+                <Font name="Bauhaus 93" size="37.0" />
+            </font>
+        </Label>
+      <Label layoutX="88.0" layoutY="290.0" text="Логин:">
+         <font>
+            <Font name="Bauhaus 93" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="374.0" prefHeight="39.0" prefWidth="113.0" text="Возраст:">
+         <font>
+            <Font name="Bauhaus 93" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputAge" layoutX="208.0" layoutY="374.0" prefHeight="39.0" prefWidth="172.0" promptText="age" style="-fx-background-color: #D7D3D3;" />
+      <TextField fx:id="inputWeight" layoutX="207.0" layoutY="438.0" prefHeight="39.0" prefWidth="172.0" promptText="weight" style="-fx-background-color: #D7D3D3;" />
+      <Label layoutX="88.0" layoutY="438.0" prefHeight="39.0" prefWidth="105.0" text="Вес:">
+         <font>
+            <Font name="Bauhaus 93" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="497.0" prefHeight="39.0" prefWidth="105.0" text="Рост:">
+         <font>
+            <Font name="Bauhaus 93" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputHeight" layoutX="207.0" layoutY="497.0" prefHeight="39.0" prefWidth="172.0" promptText="height" style="-fx-background-color: #D7D3D3;" />
+      <Label layoutX="88.0" layoutY="551.0" prefHeight="39.0" prefWidth="105.0" text="Пол:">
+         <font>
+            <Font name="Bauhaus 93" size="27.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="208.0" layoutY="560.0" mnemonicParsing="false" text="Мужской">
+         <toggleGroup>
+            <ToggleGroup fx:id="RadioButton" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="328.0" layoutY="560.0" mnemonicParsing="false" text="Женский" toggleGroup="$RadioButton" />
+      <Label layoutX="88.0" layoutY="606.0" prefHeight="39.0" prefWidth="105.0" text="Цель:">
+         <font>
+            <Font name="Bauhaus 93" size="27.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="MenuButtonTarget" layoutX="207.0" layoutY="610.0" mnemonicParsing="false" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Цель" textFill="#dddddd" textOverrun="CLIP">
+        <items>
+          <MenuItem fx:id="loseWeight" mnemonicParsing="false" onAction="#LoseWeightTargetAction" text="Снижение веса" />
+          <MenuItem fx:id="moreWeight" mnemonicParsing="false" onAction="#MoreWeightTargetAction" text="Набор веса" />
+            <MenuItem fx:id="sameWeight" mnemonicParsing="false" onAction="#SameWeightTargetAction" text="Поддержание веса" />
+        </items>
+      </MenuButton>
+      <Label layoutX="88.0" layoutY="662.0" prefHeight="39.0" prefWidth="156.0" text="Активность:">
+         <font>
+            <Font name="Bauhaus 93" size="27.0" />
+         </font>
+      </Label>
+      <MenuButton layoutX="254.0" layoutY="666.0" mnemonicParsing="false" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Активность" textFill="#d0d0d0">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#LowActivityAction" text="Низкая активность" />
+            <MenuItem mnemonicParsing="false" onAction="#EnoughActivityAction" text="Умеренная активность" />
+            <MenuItem mnemonicParsing="false" onAction="#HighActivityAction" text="Высокая активность" />
+         </items>
+      </MenuButton>
+      <Label layoutX="390.0" layoutY="412.0" prefHeight="31.0" prefWidth="40.0" text="кг">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="390.0" layoutY="471.0" prefHeight="31.0" prefWidth="40.0" text="см">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

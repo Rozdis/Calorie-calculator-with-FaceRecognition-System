@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="817.0" prefWidth="1201.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <AnchorPane layoutY="-2.0" prefHeight="213.0" prefWidth="1201.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/2.jpg');">
+            <children>
+            <Button fx:id="profileButton" layoutX="1037.0" layoutY="85.0" mnemonicParsing="false" onAction="#ClickOnProfileButton" prefHeight="31.0" prefWidth="99.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Профиль" textFill="#9e9c9c">
+               <font>
+                  <Font name="Edwardian Script ITC" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="437.0" fitWidth="850.0" layoutX="90.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../resources/icons/logo.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="68.0" fitWidth="73.0" layoutX="1052.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../resources/icons/acaunt.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="LogOutButton" layoutX="1037.0" layoutY="116.0" mnemonicParsing="false" onAction="#ClickOnLogOut" prefHeight="31.0" prefWidth="99.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Выйти" textFill="#ababab">
+               <font>
+                  <Font name="Berlin Sans FB" size="15.0" />
+               </font>
+            </Button>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </AnchorPane>
+        <Line endX="1084.0" layoutX="115.0" layoutY="157.0" opacity="0.23" startX="-120.0" strokeWidth="3.0" />
+      <VBox layoutY="838.0" prefHeight="62.0" prefWidth="606.0">
+         <children>
+            <Button fx:id="RecomandationButtonInMain" mnemonicParsing="false" onAction="#RecomendButtonInMainClick" prefHeight="73.0" prefWidth="600.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png'); -fx-border-color: #474444;" text="Рекомендации" textFill="#a1a1a1">
+               <font>
+                  <Font name="Berlin Sans FB" size="23.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="600.0" layoutY="838.0" prefHeight="68.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="EatenFoodButton" mnemonicParsing="false" onAction="#ClickOnEatenFood" prefHeight="65.0" prefWidth="600.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png'); -fx-border-color: #474444;" text="Сьеденная еда" textFill="#a1a1a1">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <TableView fx:id="tableFood" editable="true" layoutY="159.0" prefHeight="588.0" prefWidth="966.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="idColum" prefWidth="49.0" resizable="false" text="№" />
+            <TableColumn fx:id="nameColum" prefWidth="263.0" text="Продукт" />
+            <TableColumn fx:id="CaloriesColum" prefWidth="164.0" text="Калорийность" />
+            <TableColumn fx:id="proteinsColum" prefWidth="155.0" text="Белки" />
+            <TableColumn fx:id="fatsColum" minWidth="0.0" prefWidth="158.0" text="Жиры" />
+            <TableColumn fx:id="carbohydratesColum" prefWidth="180.0" text="Углеводы" />
+        </columns>
+         <effect>
+            <Lighting diffuseConstant="1.1" specularConstant="0.25" specularExponent="0.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </TableView>
+      <Button layoutX="964.0" layoutY="159.0" mnemonicParsing="false" onAction="#SortTable1" prefHeight="62.0" prefWidth="236.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png'); -fx-border-color: #474444;" text="Овощи" textFill="#a1a1a1">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font></Button>
+      <Button layoutX="964.0" layoutY="221.0" mnemonicParsing="false" onAction="#SortTable2" prefHeight="62.0" prefWidth="236.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png'); -fx-border-color: #47444;" text="Фрукты" textFill="#a1a1a1">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font></Button>
+      <Button layoutX="964.0" layoutY="283.0" mnemonicParsing="false" onAction="#SortTable3" prefHeight="62.0" prefWidth="236.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png'); -fx-border-color: #474444;" text="Мясо" textFill="#a1a1a1">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font></Button>
+      <Button layoutX="964.0" layoutY="345.0" mnemonicParsing="false" onAction="#SortTable4" prefHeight="62.0" prefWidth="236.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png'); -fx-border-color: #474444;" text="Блюда" textFill="#a1a1a1">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font></Button>
+      <Button layoutX="964.0" layoutY="407.0" mnemonicParsing="false" onAction="#SortTable5" prefHeight="62.0" prefWidth="236.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Десерты" textFill="#a1a1a1">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font></Button>
+      <Button layoutX="964.0" layoutY="469.0" mnemonicParsing="false" onAction="#SortTable6" prefHeight="62.0" prefWidth="236.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png'); -fx-border-color: #474444;" text="Напитки" textFill="#a1a1a1">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font></Button>
+      <Button layoutX="964.0" layoutY="531.0" mnemonicParsing="false" onAction="#SortTable7" prefHeight="68.0" prefWidth="236.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png'); -fx-border-color: #474444;" text="Алкоголь" textFill="#a1a1a1">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font></Button>
+      <Label layoutX="976.0" layoutY="615.0" text="Отфильтровать по калориям">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1013.0" layoutY="650.0" text="от:">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font></Label>
+      <Label layoutX="1012.0" layoutY="700.0" text="до:">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font></Label>
+      <TextField fx:id="inputFrom" layoutX="1057.0" layoutY="645.0" prefHeight="21.0" prefWidth="66.0" style="-fx-background-color: #D7D3D3;" />
+      <TextField fx:id="inputTo" layoutX="1057.0" layoutY="695.0" prefHeight="31.0" prefWidth="66.0" style="-fx-background-color: #D7D3D3;" />
+      <Button fx:id="filtrButton" layoutX="1036.0" layoutY="739.0" mnemonicParsing="false" onAction="#ClickOnFiltr" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Фильтровать" textFill="#cdcdcd">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font></Button>
+      <Label layoutX="14.0" layoutY="760.0" text="* Калорийность блюд указана на одну порцию (100гр). Рассодимость с реальными показателями +-3%">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="16.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

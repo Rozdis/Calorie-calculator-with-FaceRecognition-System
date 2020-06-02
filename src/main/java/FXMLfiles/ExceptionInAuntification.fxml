@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Text layoutX="81.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Простите, произошла ошибка при индетификации вашего профиля. Возможно вы не зарегестрированы, вы также можете войти использовав логин." wrappingWidth="460.4765625" />
+      <Button fx:id="EnterButton" layoutX="-1.0" layoutY="256.0" mnemonicParsing="false" onAction="#LoginByUsername" prefHeight="31.0" prefWidth="361.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Войти" textFill="#c3c3c3" />
+      <Button fx:id="OpenRegButton" layoutX="301.0" layoutY="256.0" mnemonicParsing="false" onAction="#OpenRegistration" prefHeight="31.0" prefWidth="300.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Зарегестрироваться" textFill="#dddddd" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerEatenFood">
+    <children>
+        <AnchorPane layoutY="-2.0" prefHeight="162.0" prefWidth="1201.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/2.jpg');">
+            <children>
+                <Button fx:id="profileButton" layoutX="1037.0" layoutY="107.0" mnemonicParsing="false" onAction="#ClickOnProfileButton" prefHeight="31.0" prefWidth="99.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Профиль" textFill="#9e9c9c">
+                    <font>
+                        <Font name="Edwardian Script ITC" size="14.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="437.0" fitWidth="850.0" layoutX="90.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../resources/icons/logo.PNG" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="68.0" fitWidth="73.0" layoutX="1053.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../resources/icons/acaunt.png" />
+                    </image>
+                </ImageView>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </AnchorPane>
+        <VBox layoutY="838.0" prefHeight="62.0" prefWidth="386.0" />
+        <VBox layoutX="386.0" layoutY="838.0" prefHeight="62.0" prefWidth="399.0" />
+        <VBox layoutX="785.0" layoutY="838.0" prefHeight="62.0" prefWidth="415.0" />
+        <TableView fx:id="tableFood" layoutY="626.0" prefHeight="273.0" prefWidth="1201.0" tableMenuButtonVisible="true">
+            <columns>
+                <TableColumn fx:id="idColum" prefWidth="49.0" text="№" />
+                <TableColumn fx:id="nameColum" prefWidth="263.0" text="Продукт" />
+                <TableColumn fx:id="CaloriesColum" prefWidth="164.0" text="Калорийность" />
+                <TableColumn fx:id="proteinsColum" prefWidth="105.0" text="Белки" />
+                <TableColumn fx:id="fatsColum" minWidth="0.0" prefWidth="142.0" text="Жиры" />
+                <TableColumn fx:id="carbohydratesColum" prefWidth="148.0" text="Углеводы" />
+            <TableColumn fx:id="gramsColum" prefWidth="143.0" text="Граммы" />
+            <TableColumn fx:id="timeColum" prefWidth="186.0" text="Время" />
+            </columns>
+         <effect>
+            <Lighting diffuseConstant="1.1" specularConstant="0.25" specularExponent="0.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+        </TableView>
+      <ChoiceBox fx:id="AllFoodList" layoutX="419.0" layoutY="282.0" prefHeight="47.0" prefWidth="189.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="0.0" color="#f5f3f3" />
+               </light>
+            </Lighting>
+         </effect></ChoiceBox>
+      <Text layoutX="86.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Виберите продукт: " wrappingWidth="290.0">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="415.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сьеденные продукты" wrappingWidth="386.0">
+         <font>
+            <Font name="Berlin Sans FB" size="39.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Text>
+      <Text layoutX="86.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кол-во грам:" wrappingWidth="189.0">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="inpuntNumberOfGrams" layoutX="306.0" layoutY="364.0" prefHeight="33.0" prefWidth="172.0" style="-fx-background-color: #D7D3D3;" />
+      <Button fx:id="ButtonAddFoodToTable" layoutX="482.0" layoutY="473.0" mnemonicParsing="false" onAction="#ClickOnAddFoodToTable" prefHeight="43.0" prefWidth="230.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Добавить" textFill="#c3c3c3">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <AnchorPane layoutY="-2.0" prefHeight="182.0" prefWidth="1201.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/2.jpg');">
+            <children>
+                <ImageView fitHeight="437.0" fitWidth="850.0" layoutX="169.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../resources/icons/logo.PNG" />
+                    </image>
+                </ImageView>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </AnchorPane>
+        <Label layoutX="412.0" layoutY="183.0" prefHeight="80.0" prefWidth="378.0" text="Профиль пользователя">
+            <font>
+                <Font name="Berlin Sans FB" size="33.0" />
+            </font>
+        </Label>
+      <ImageView fitHeight="302.0" fitWidth="278.0" layoutX="59.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/profileIcon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="437.0" layoutY="321.0" prefHeight="46.0" prefWidth="184.0" text="Логин:">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="843.0" layoutY="321.0" prefHeight="46.0" prefWidth="126.0" text="Возраст:">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="843.0" layoutY="383.0" prefHeight="39.0" prefWidth="84.0" text="Вес:">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="843.0" layoutY="435.0" prefHeight="46.0" prefWidth="184.0" text="Рост:">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="843.0" layoutY="495.0" prefHeight="46.0" prefWidth="184.0" text="Пол:">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="437.0" layoutY="379.0" prefHeight="46.0" prefWidth="184.0" text="Цель:">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="437.0" layoutY="435.0" prefHeight="46.0" prefWidth="184.0" text="Активность:">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="loginTextProfile" layoutX="554.0" layoutY="328.0" prefHeight="32.0" prefWidth="137.0" text="**скрыто***">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font></Label>
+      <Button fx:id="hideButton" layoutX="481.0" layoutY="590.0" mnemonicParsing="false" onAction="#ShowInfoClick" prefHeight="46.0" prefWidth="193.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Показать информацию" textFill="#dadada">
+         <font>
+            <Font name="Bauhaus 93" size="15.0" />
+         </font></Button>
+      <Label fx:id="targetTextProfile" layoutX="537.0" layoutY="386.0" prefHeight="32.0" prefWidth="268.0" text="**скрыто***">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="activityTextProfile" layoutX="622.0" layoutY="442.0" prefHeight="32.0" prefWidth="213.0" text="**скрыто***">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="ageTextProfile" layoutX="979.0" layoutY="328.0" prefHeight="32.0" prefWidth="137.0" text="**скрыто***">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="weightTextProfile" layoutX="911.0" layoutY="386.0" prefHeight="32.0" prefWidth="137.0" text="**скрыто***">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="heightTextProfile" layoutX="927.0" layoutY="442.0" prefHeight="32.0" prefWidth="137.0" text="**скрыто***">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="genderTextProfile" layoutX="921.0" layoutY="502.0" prefHeight="32.0" prefWidth="137.0" text="**скрыто***">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

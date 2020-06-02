@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <AnchorPane layoutY="-2.0" prefHeight="182.0" prefWidth="1201.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/2.jpg');">
+            <children>
+                <Button fx:id="profileButton" layoutX="1037.0" layoutY="97.0" mnemonicParsing="false" onAction="#ClickOnProfileButton" prefHeight="31.0" prefWidth="99.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Профиль" textFill="#9e9c9c">
+                    <font>
+                        <Font name="Edwardian Script ITC" size="14.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="437.0" fitWidth="850.0" layoutX="74.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../resources/icons/logo.PNG" />
+                    </image>
+                </ImageView>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </AnchorPane>
+      <Label layoutX="250.0" layoutY="191.0" text="Добавление продуктов питания" underline="true">
+         <font>
+            <Font name="Berlin Sans FB" size="40.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="115.0" layoutY="367.0" prefHeight="48.0" prefWidth="188.0" text="Название: ">
+         <font>
+            <Font name="Berlin Sans FB" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="448.0" prefHeight="40.0" prefWidth="247.0" text="Калорийность: ">
+         <font>
+            <Font name="Berlin Sans FB" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="529.0" prefHeight="35.0" prefWidth="225.0" text="Белки:">
+         <font>
+            <Font name="Berlin Sans FB" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="607.0" prefHeight="35.0" prefWidth="225.0" text="Жиры:">
+         <font>
+            <Font name="Berlin Sans FB" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="685.0" prefHeight="35.0" prefWidth="225.0" text="Углеводы:">
+         <font>
+            <Font name="Berlin Sans FB" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AddProductName" layoutX="303.0" layoutY="371.0" prefHeight="40.0" prefWidth="255.0" promptText="Name" style="-fx-background-color: #D7D3D3;" />
+      <TextField fx:id="AddProductProt" layoutX="248.0" layoutY="529.0" prefHeight="40.0" prefWidth="135.0" promptText="Proteins" style="-fx-background-color: #D7D3D3;" />
+      <TextField fx:id="AddProductCalories" layoutX="383.0" layoutY="448.0" prefHeight="40.0" prefWidth="135.0" promptText="Calories" style="-fx-background-color: #D7D3D3;" />
+      <TextField fx:id="AddProductFats" layoutX="248.0" layoutY="615.0" prefHeight="40.0" prefWidth="135.0" promptText="Fats" style="-fx-background-color: #D7D3D3;" />
+      <TextField fx:id="AddProductCarb" layoutX="303.0" layoutY="685.0" prefHeight="40.0" prefWidth="135.0" promptText="Carbohydrates" style="-fx-background-color: #D7D3D3;" />
+      <Button fx:id="AddProductButton" depthTest="DISABLE" disable="true" layoutX="710.0" layoutY="458.0" mnemonicParsing="false" onAction="#AddProductClick" prefHeight="182.0" prefWidth="358.0" style="-fx-background-color: #212121;" text="Добавить продукт" textFill="#807b7b">
+         <font>
+            <Font name="Berlin Sans FB" size="33.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <Label contentDisplay="CENTER" layoutX="115.0" layoutY="289.0" prefHeight="48.0" prefWidth="442.0" text="Введите логин менеджера:">
+         <font>
+            <Font name="Berlin Sans FB" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="LoginOfManager" layoutX="583.0" layoutY="293.0" prefHeight="40.0" prefWidth="324.0" promptText="Login" style="-fx-background-color: #D7D3D3;" />
+      <Button fx:id="CheckLoginButton" layoutX="935.0" layoutY="293.0" mnemonicParsing="false" onAction="#CheckLoginAction" prefHeight="40.0" prefWidth="152.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Ввести" textFill="#b2b2b2">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="111.0" layoutY="755.0" prefHeight="40.0" prefWidth="234.0" text="Тип продукта: ">
+         <font>
+            <Font name="Berlin Sans FB" size="35.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="menuButtonTypeOfFood" alignment="CENTER" layoutX="362.0" layoutY="760.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-image: url('file:/C:/Users/Legion/IdeaProjects/Caloriess/resources/icons/button.png');" text="Type" textFill="#dadada" textOverrun="CLIP">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#ActionChoose1" text="Овощи" />
+          <MenuItem mnemonicParsing="false" onAction="#ActionChoose2" text="Фрукты" />
+            <MenuItem mnemonicParsing="false" onAction="#ActionChoose3" text="Мясо" />
+            <MenuItem mnemonicParsing="false" onAction="#ActionChoose4" text="Блюда" />
+            <MenuItem mnemonicParsing="false" onAction="#ActionChoose5" text="Дисерты" />
+            <MenuItem mnemonicParsing="false" onAction="#ActionChoose6" text="Напитки" />
+            <MenuItem mnemonicParsing="false" onAction="#ActionChoose7" text="Алкоголь" />
+        </items>
+      </MenuButton>
+
+    </children>
+</AnchorPane>
